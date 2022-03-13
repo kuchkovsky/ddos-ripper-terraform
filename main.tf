@@ -54,3 +54,19 @@ resource "kubernetes_deployment" "dripper" {
     }
   }
 }
+
+resource "kubernetes_limit_range" "dripper" {
+  metadata {
+    name      = "dripper"
+    namespace = kubernetes_namespace.dripper.metadata.0.name
+  }
+
+  spec {
+    limit {
+      type = "Pod"
+      max = {
+        memory = "512Mi"
+      }
+    }
+  }
+}

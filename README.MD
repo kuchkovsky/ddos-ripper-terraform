@@ -1,7 +1,7 @@
 # DDoS-Ripper Terraform Wrapper over Kubernetes
 
 ## Description
-A wrapper for [DDoS-Ripper](https://github.com/palahsu/DDoS-Ripper/blob/main/README.md)
+A wrapper for [DDoS-Ripper](https://github.com/palahsu/DDoS-Ripper)
 that launches Kubernetes deployments for each specified IP and port.
 Simplifies massive DDoS attacks for a large number of targets and automatically
 relaunches DDoS-Ripper in case of failure.
@@ -35,7 +35,7 @@ Custom configuration:
 
 ### Stopping the atack
 
-`terraform destroy -auto-approve -var targets=IP1:PORT1,IP2:PORT2`
+`terraform destroy -auto-approve`
 
 ## Input parameters
 

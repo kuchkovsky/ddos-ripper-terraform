@@ -1,5 +1,6 @@
 variable "targets" {
   type        = string
+  default     = "8.8.8.8:443,8.8.4.4:443" # Google DNS website as an example
   description = "Target IP and Ports specified in format IP1:PORT1,IP2:PORT2"
 }
 
