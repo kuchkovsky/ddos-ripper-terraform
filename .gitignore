@@ -1,0 +1,14 @@
+# IDEA / VS Code
+.idea
+.vscode
+*.iml
+
+# Terraform
+.terraform
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+terraform.tfstate
+terraform.tfstate.backup
+
+# macOS
+.DS_Store
